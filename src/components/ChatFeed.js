@@ -1,8 +1,9 @@
 import MyMessage from './MyMessage';
-import TheirMessage from './TheirMessage';
+import OtherMessage from './OtherMessage';
 import MessageForm from './MessageForm';
 
 const ChatFeed = (props) => {
+  console.log(props)
   const { chats, activeChat, userName, messages } = props;
 
   const chat = chats && chats[activeChat];
@@ -21,7 +22,7 @@ const ChatFeed = (props) => {
           <div className="message-block">
             {isMyMessage
               ? <MyMessage message={message} />
-              : <TheirMessage message={message} lastMessage={messages[lastMessageKey]} />}
+              : <OtherMessage message={message} lastMessage={messages[lastMessageKey]} />}
           </div>
         </div>
       );
