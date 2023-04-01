@@ -1,6 +1,7 @@
 import MyMessage from './MyMessage';
 import OtherMessage from './OtherMessage';
 import MessageForm from './MessageForm';
+import ChatTitle from './ChatTitle';
 
 const ChatFeed = (props) => {
   console.log(props)
@@ -8,21 +9,21 @@ const ChatFeed = (props) => {
 
   const chat = chats && chats[activeChat];
 
-
   const renderMessages = () => {
     const keys = Object.keys(messages);
+    console.log(keys)
 
     return keys.map((key, index) => {
       const message = messages[key];
-      const lastMessageKey = index === 0 ? null : keys[index - 1];
-      const isMyMessage = userName === message.sender.username;
+      //if there are messages we need to find the last nessage
+      const isMyMessage = userName === message.sender.username//check the current user's username against the sender of this message's username
 
       return (
         <div key={`msg_${index}`} style={{ width: '100%' }}>
           <div className="message-block">
             {isMyMessage
               ? <MyMessage message={message} />
-              : <OtherMessage message={message} lastMessage={messages[lastMessageKey]} />}
+              : <OtherMessage message={message}/>}
           </div>
         </div>
       );
@@ -33,14 +34,10 @@ const ChatFeed = (props) => {
 
   return (
     <div className="chat-feed">
-      <div className="chat-title-container">
-        <div className="chat-title">{chat?.title}</div>
-      </div>
+      <ChatTitle chatTitle= {chat?.title}/>
       {renderMessages()}
       <div style={{ height: '100px' }} />
-      <div className="message-form-container">
-        <MessageForm {...props} chatId={activeChat} />
-      </div>
+      <MessageForm {...props} chatId={activeChat} />
     </div>
   );
 };
