@@ -183,7 +183,7 @@
   font-size: 14px;
 }
 
-/* Login form css */
+/* Custom login form css */
 *,
 *::after,
 *::before {
@@ -196,7 +196,7 @@
 .wrapper {
   height: 100vh;
 	width: 100%;
-  background: linear-gradient(90.21deg,rgba(0,212,255,.9) -5.91%, rgba(255, 255, 255) -5.91%, rgba(170, 54, 124, 0.6) -5.91%, rgba(74, 47, 189, 0.9) 111.58%);
+  background: linear-gradient(90.21deg,rgba(0,212,255,0.5) -5.91%, rgba(255, 255, 255) -5.91%, rgba(170, 54, 124, 0.3) -5.91%, rgba(74, 47, 189, 0.6) 111.58%);
   display: flex;
   justify-content: center;
   align-items: center;
