@@ -27,20 +27,18 @@ This app allows users to create a chat room and connect with their friends. The 
  ![wireframe2](https://i.imgur.com/mcFohD8.png)
  ![wireframe3](https://i.imgur.com/nlT1X84.png)
  ### App Images
- Coming soon...
- <!-- ![app index page](https://i.imgur.com/jrF2weW.png)
- ![app show page](https://i.imgur.com/MB2hEAw.png) -->
+ ![app login page](https://i.imgur.com/mQZ7yzn.png)
+ ![app chat page](https://i.imgur.com/J4I4p7s.png)
+![app chat page tabs closed](https://i.imgur.com/ZlutjFQ.png)
 
 ### Backend Setup
-- User Authentication
+- User Login via Chat Engine Backend
 - Creating/reading/updating/deleting chatroom
 - Retrieving chatroom history 
 
 
 #### Links to Project
-TBD
-<!-- [Backend Deployed Project Page](https://charming-creponne-cea4b6.netlify.app/) -->
-<!-- [Frontend Deployed Project Page](https://travel-app-backend-v9eb.onrender.com/countries/) -->
+[Project Page](https://imeowsage.netlify.app/)
 
 
 ####  Getting Started
